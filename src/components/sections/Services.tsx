@@ -8,13 +8,15 @@ import {
   StaggerIn,
   StaggerItem,
 } from "@/components/ui/Stagger";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SERVICES } from "@/lib/services";
 
 export function Services() {
   return (
-    <MotionSection className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#080808] border-t border-white/[0.06]">
-      <div className="mx-auto max-w-7xl">
+    <MotionSection className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#080808] border-t border-white/[0.06] overflow-hidden">
+      <SectionGlow accentOpacity={0.22} whiteOpacity={0.1} />
+      <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Capabilities"
           title="Services"

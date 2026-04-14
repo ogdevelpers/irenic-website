@@ -1,6 +1,7 @@
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
+import { Clients } from "@/components/sections/Clients";
 import { Header } from "@/components/layout/Header";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 
@@ -15,6 +16,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <Services />
+        <Clients />
         <FeaturedWork />
       </main>
     </>

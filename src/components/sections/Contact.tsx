@@ -3,6 +3,7 @@
 import { InstagramOutlined, MailOutlined, YoutubeOutlined } from "@ant-design/icons";
 import { Button, Col, Form, Input, Row } from "antd";
 import { MotionFadeUp, MotionSection } from "@/components/ui/Stagger";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SECTION_IDS } from "@/lib/constants";
 
@@ -27,9 +28,10 @@ export function Contact() {
   return (
     <MotionSection
       id={SECTION_IDS.contact}
-      className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#080808] border-t border-white/[0.06]"
+      className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#080808] border-t border-white/[0.06] overflow-hidden"
     >
-      <div className="mx-auto max-w-7xl">
+      <SectionGlow accentOpacity={0.24} whiteOpacity={0.11} />
+      <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Reach out"
           title="Contact Us"

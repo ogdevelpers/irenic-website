@@ -7,6 +7,7 @@ import {
   StaggerIn,
   StaggerItem,
 } from "@/components/ui/Stagger";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getFeaturedPortfolio } from "@/lib/portfolio";
 
@@ -17,8 +18,9 @@ export function FeaturedWork() {
   const featured = getFeaturedPortfolio(3);
 
   return (
-    <MotionSection className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#050505] border-t border-white/[0.06]">
-      <div className="mx-auto max-w-7xl">
+    <MotionSection className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-10 bg-[#050505] border-t border-white/[0.06] overflow-hidden">
+      <SectionGlow accentOpacity={0.26} whiteOpacity={0.12} />
+      <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Work"
           title="Selected projects"
